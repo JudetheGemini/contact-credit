@@ -1,6 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import hero1 from "../assets/images/hero 1.png";
+import hero2 from "../assets/images/hero 2.png";
+import hero3 from "../assets/images/hero 3.png";
+import proof_funds from "../assets/images/Asset 6.svg";
+import personal from "../assets/images/Asset 5.svg";
+import business from "../assets/images/Asset 9.svg";
+import educational from "../assets/images/Asset 4.svg";
+import mortgage from "../assets/images/Asset 7.svg";
+import travel from "../assets/images/Asset 8.svg";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,7 +41,7 @@ import Card from "../components/Card.astro";
 					class="flex flex-col justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
 				>
 					<img
-						src="src/assets/images/hero 1.png"
+						src={hero1}
 						alt="mockup"
 						class="h-96 md:h-max lg:h-max"
 					/>
@@ -48,7 +56,7 @@ import Card from "../components/Card.astro";
 					class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
 				>
 					<img
-						src="src/assets/images/hero 2.png"
+						src={hero2}
 						alt="mockup"
 						class="h-80 md:h-max lg:h-96"
 					/>
@@ -88,55 +96,37 @@ import Card from "../components/Card.astro";
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 6.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={proof_funds} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">PROOF OF FUNDS</p>
 				</div>
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 5.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={personal} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">PERSONAL LOANS</p>
 				</div>
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 9.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={business} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">BUSINESS LOANS</p>
 				</div>
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 4.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={educational} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">EDUCATIONAL LOANS</p>
 				</div>
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 7.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={mortgage} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">MORTGAGE LOANS</p>
 				</div>
 				<div
 					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
 				>
-					<img
-						src="src/assets/images/Asset 8.svg"
-						class="h-16 pb-2"
-					/>
+					<img src={travel} class="h-16 pb-2" />
 					<p class="text-xs text-white pb-1">TRAVEL LOANS</p>
 				</div>
 			</div>
@@ -152,7 +142,7 @@ import Card from "../components/Card.astro";
 					class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
 				>
 					<img
-						src="src/assets/images/hero 3.png"
+						src={hero3}
 						alt="mockup"
 						class="h-80 md:h-max lg:h-96"
 					/>
