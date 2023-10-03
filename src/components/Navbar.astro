@@ -51,21 +51,21 @@ import logo from "../assets/images/logo.png";
           <li>
             <a
               href="#"
-              class="block py-2 pr-4 font-kumbh font-bold pl-3 text-black rounded bg-primary-700 hover:text-green-500 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+              class="block py-2 pr-4 dropdown-item font-kumbh font-bold pl-3 text-black rounded bg-primary-700 hover:text-blue-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white active:bg-blue-700 active:text-white"
               aria-current="page">HOME</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="block py-2 font-kumbh pr-4 font-bold pl-3 text-black border-b border-gray-100 hover:text-blue-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 font-kumbh dropdown-item pr-4 font-bold pl-3 text-black border-b border-gray-100 hover:text-blue-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 active:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >SERVICES</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="block py-2 pr-4 font-kumbh font-bold pl-3 text-black border-b border-gray-100 hover:text-green-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pr-4 dropdown-item font-kumbh font-bold pl-3 text-black border-b border-gray-100 hover:text-blue-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 active:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
               >CONTACT</a
             >
           </li>
@@ -74,3 +74,15 @@ import logo from "../assets/images/logo.png";
     </div>
   </nav>
 </header>
+
+<script>
+  const currentUrl = window.location.pathname;
+
+  const links = document.querySelectorAll(".dropdown-item");
+
+  links.forEach((link) => {
+    if (link.getAttribute("href") === currentUrl) {
+      link.classList.add("bg-blue-600");
+    }
+  });
+</script>
