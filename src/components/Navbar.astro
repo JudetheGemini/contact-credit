@@ -74,15 +74,3 @@ import logo from "../assets/images/logo.png";
     </div>
   </nav>
 </header>
-
-<script>
-  const currentUrl = window.location.pathname;
-
-  const links = document.querySelectorAll(".dropdown-item");
-
-  links.forEach((link) => {
-    if (link.getAttribute("href") === currentUrl) {
-      link.classList.add("bg-blue-600");
-    }
-  });
-</script>
