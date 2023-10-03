@@ -12,186 +12,176 @@ import travel from "../assets/images/Asset 8.svg";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<section class="bg-green-100 dark:bg-gray-900">
-			<div
-				class="grid justify-center max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
-			>
-				<div
-					class="flex flex-col justify-center items-center mr-auto place-self-center md:items-start md:col-span-7"
-				>
-					<h1
-						class="text-center max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-left md:text-5xl xl:text-5xl dark:text-white"
-					>
-						Empowering your dreams, one loan at a time
-					</h1>
-					<p
-						class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-					>
-						Your financial status is in good hands
-					</p>
-					<a
-						href="#"
-						class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-					>
-						Contact Us
-					</a>
-				</div>
-				<div
-					class="flex flex-col justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
-				>
-					<img
-						src={hero1}
-						alt="mockup"
-						class="h-96 md:h-max lg:h-max"
-					/>
-				</div>
-			</div>
-		</section>
-		<section class="bg-white dark:bg-gray-900 mb-6">
-			<div
-				class="grid justify-center mx-auto max-w-screen-xl md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
-			>
-				<div
-					class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
-				>
-					<img
-						src={hero2}
-						alt="mockup"
-						class="h-80 md:h-max lg:h-96"
-					/>
-				</div>
-				<div
-					class="flex flex-col-reverse p-6 justify-center items-center mr-auto place-self-center md:items-start md:col-span-7"
-				>
-					<p
-						class="max-w-2xl text-justify mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-					>
-						At Contact Credit, we understand that personal
-						aspirations often require financial support. Our
-						personalized personal loans provide the means to make
-						your dreams a reality. Whether it's a dream vacation,
-						home improvement project, or unexpected expenses, we're
-						here to help you achieve your goals
-					</p>
-					<h1
-						class="text-center max-w-2xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-left md:text-2xl xl:text-4xl dark:text-white"
-					>
-						We Help our Clients To Achieve Their Goals Through
-						Funding
-					</h1>
-				</div>
-			</div>
-		</section>
-		<section class="lg:py-16">
-			<div class="flex flex-col items-center">
-				<h4 class="font-bold text-xl p-4">Services</h4>
-				<h2 class="font-extrabold text-lg text-center">
-					Exceptional Financial Services for Growth
-				</h2>
-			</div>
-			<div
-				class="grid grid-cols-3 gap-4 max-w-screen-xl px-4 py-8 mx-auto lg:grid-cols-6 lg:gap-x-0"
-			>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={proof_funds} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">PROOF OF FUNDS</p>
-				</div>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={personal} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">PERSONAL LOANS</p>
-				</div>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={business} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">BUSINESS LOANS</p>
-				</div>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={educational} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">EDUCATIONAL LOANS</p>
-				</div>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={mortgage} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">MORTGAGE LOANS</p>
-				</div>
-				<div
-					class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
-				>
-					<img src={travel} class="h-16 pb-2" />
-					<p class="text-xs text-white pb-1">TRAVEL LOANS</p>
-				</div>
-			</div>
-		</section>
-		<section class="bg-white dark:bg-gray-900 mb-6 py-10">
-			<div class="flex flex-col items-center">
-				<h4 class="font-bold text-xl p-4">Why Choose Us?</h4>
-			</div>
-			<div
-				class="grid justify-center mx-auto max-w-screen-xl md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
-			>
-				<div
-					class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
-				>
-					<img
-						src={hero3}
-						alt="mockup"
-						class="h-80 md:h-max lg:h-96"
-					/>
-				</div>
-				<div class="flex flex-row"></div>
-			</div>
-		</section>
-	</main>
+  <main>
+    <section class="bg-greenLike dark:bg-gray-900">
+      <div
+        class="grid justify-center max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
+      >
+        <div
+          class="flex flex-col justify-center items-center mr-auto place-self-center md:items-start md:col-span-7"
+        >
+          <h1
+            class="text-center max-w-2xl mb-4 text-2xl leading-8 font-bold uppercase font-kumbh tracking-tight md:text-left md:text-4xl md:leading-12 dark:text-white"
+          >
+            Empowering your dreams,<br /> one loan at a time
+          </h1>
+          <p
+            class="max-w-2xl mb-6 font-light font-kumbh text-black lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+          >
+            Your financial status is in good hands
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center transition hover:ease-in duration-300 font-kumbh px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          >
+            Contact Us
+          </a>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
+        >
+          <img
+            src={hero1}
+            alt="mockup"
+            class="h-96 animate-pulse md:h-max lg:h-100%"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-white dark:bg-gray-900 mb-6">
+      <div
+        class="grid justify-center mx-auto max-w-screen-xl md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
+      >
+        <div
+          class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
+        >
+          <img src={hero2} alt="mockup" class="h-80 md:h-max lg:h-96" />
+        </div>
+        <div
+          class="flex flex-col-reverse p-6 justify-center items-center mr-auto place-self-center md:items-start md:col-span-7"
+        >
+          <p
+            class="max-w-2xl text-justify mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+          >
+            At Contact Credit, we understand that personal aspirations often
+            require financial support. Our personalized personal loans provide
+            the means to make your dreams a reality. Whether it's a dream
+            vacation, home improvement project, or unexpected expenses, we're
+            here to help you achieve your goals
+          </p>
+          <h1
+            class="text-center max-w-2xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-left md:text-2xl xl:text-4xl dark:text-white"
+          >
+            We Help our Clients To Achieve Their Goals Through Funding
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="lg:py-16">
+      <div class="flex flex-col items-center">
+        <h4 class="font-bold text-xl p-4">Services</h4>
+        <h2 class="font-extrabold text-lg text-center">
+          Exceptional Financial Services for Growth
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-3 gap-4 max-w-screen-xl items-center px-4 py-8 mx-auto lg:grid-cols-6 lg:gap-x-0"
+      >
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={proof_funds} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">PROOF OF FUNDS</p>
+        </div>
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={personal} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">PERSONAL LOANS</p>
+        </div>
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={business} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">BUSINESS LOANS</p>
+        </div>
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={educational} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">EDUCATIONAL LOANS</p>
+        </div>
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={mortgage} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">MORTGAGE LOANS</p>
+        </div>
+        <div
+          class="bg-darkBlue link-card w-28 rounded-sm flex flex-col justify-center items-center md:w-full lg:w-40"
+        >
+          <img src={travel} class="h-16 pb-2" />
+          <p class="text-xs text-white pb-1">TRAVEL LOANS</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white dark:bg-gray-900 mb-6 p-10">
+      <div class="flex flex-col items-center">
+        <h4 class="font-bold text-xl p-4">Why Choose Us?</h4>
+      </div>
+      <div
+        class="grid justify-center mx-auto max-w-screen-xl md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
+      >
+        <div
+          class="flex flex-col justify-between items-center py-4 md:mt-0 md:col-span-5 md:flex md:items-start"
+        >
+          <img src={hero3} alt="mockup" class="h-80 md:h-max lg:h-96" />
+        </div>
+        <div class="flex flex-row"></div>
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  main {
+    margin: auto;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>

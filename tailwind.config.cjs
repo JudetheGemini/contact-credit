@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     colors: {
       darkBlue: "#263238",
+      greenLike: "#AFE4BE",
     },
     fontSize: {
       xs: "0.6rem",
@@ -18,6 +19,8 @@ module.exports = {
       "4xl": "2.441rem",
       "5xl": "3.052rem",
     },
+    lineHeight: { 12: "3rem" },
+    fontFamily: { kumbh: ['"Kumbh Sans"', "sans-serif"] },
     extend: {},
   },
   plugins: [require("flowbite/plugin")],

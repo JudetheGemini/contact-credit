@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,46 +10,48 @@ import Footer from "../components/Footer.astro";
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-			,
-		/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-		<script
-			is:inline
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"
-		></script>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"
+    ></script>
+    <Footer />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 37, 63, 240;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			#ffffff 30%,
-			rgb(255, 255, 255) 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #f6f6f6;
+  :root {
+    --accent: 37, 63, 240;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      #ffffff 30%,
+      rgb(255, 255, 255) 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #f6f6f6;
 
-		box-sizing: border-box;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+    box-sizing: border-box;
+  }
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
 </style>
