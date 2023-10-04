@@ -5,34 +5,38 @@ import logo from "../assets/images/logo.png";
 <footer class="bg-gray-800 shadow dark:bg-gray-900">
   <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
     <div class="sm:flex sm:items-center sm:justify-between">
-      <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-        <img src={logo} class="h-8 mr-3" alt="Flowbite Logo" />
-        <div class="flex flex-col">
-          <span
-            class="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white"
-            >Contact Credit Limited</span
-          >
-          <span class="text-white text-end font-kumbh text-sm">RC:1880357</span>
-        </div>
-      </a>
+      <div class="flex flex-row justify-center">
+        <a href="/" class="flex items-center mb-4 sm:mb-0">
+          <img src={logo} class="h-12 mr-3" alt="Contact Credit Logo" />
+          <div class="flex flex-col">
+            <span
+              class="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white"
+              >Contact Credit Limited</span
+            >
+            <span class="text-white text-end font-kumbh text-sm"
+              >RC:1880357</span
+            >
+          </div>
+        </a>
+      </div>
       <ul
-        class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400"
+        class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
       >
         <li>
-          <a href="/" class="mr-4 hover:underline md:mr-6">Home</a>
+          <a href="/" class="mr-4 md:mr-6 hover:text-white">Home</a>
         </li>
         <li>
-          <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
+          <a href="/services" class="mr-4 md:mr-6 hover:text-white">Services</a>
         </li>
         <li>
-          <a href="/contact" class="hover:underline">Contact</a>
+          <a href="/contact" class="hover:text-white">Contact</a>
         </li>
       </ul>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >© 2023 <a href="#" class="hover:underline">CC Ltd.™</a>. All Rights
-      Reserved.</span
+    <span class="block text-sm text-gray-500 text-center dark:text-gray-400"
+      >© 2023 <a href="#" class="hover:underline text-center">CC Ltd.™</a>. All
+      Rights Reserved.</span
     >
   </div>
 </footer>
