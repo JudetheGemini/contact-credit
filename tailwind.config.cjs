@@ -8,6 +8,8 @@ module.exports = {
     colors: {
       darkBlue: "#263238",
       greenLike: "#AFE4BE",
+      myBlue: "#012168",
+      myGreen: "#6CC049",
     },
     fontSize: {
       xs: "0.6rem",
