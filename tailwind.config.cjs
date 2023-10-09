@@ -61,7 +61,7 @@ module.exports = {
       animation: {
         wiggle: "wiggle 4s infinite",
       },
-      backgroundImage: { money: "url(./src/assets/images/background.jpg)" },
+      backgroundImage: { money: "url(../assets/images/background.jpg)" },
     },
   },
   plugins: [require("flowbite/plugin")],
