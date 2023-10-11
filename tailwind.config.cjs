@@ -10,6 +10,7 @@ module.exports = {
       greenLike: "#AFE4BE",
       myBlue: "#012168",
       myGreen: "#6CC049",
+      greyish: "#D9D9D9",
     },
     fontSize: {
       xs: "0.6rem",
@@ -61,7 +62,10 @@ module.exports = {
       animation: {
         wiggle: "wiggle 4s infinite",
       },
-      backgroundImage: { money: "url('/src/assets/images/background.jpg')" },
+      backgroundImage: {
+        money: "url('/src/assets/images/background.jpg')",
+        contact: "url('/src/assets/images/contact.jpg')",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
