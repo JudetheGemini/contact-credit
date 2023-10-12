@@ -1,9 +1,254 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import proof_funds from "../assets/images/Asset 6.svg";
+import personal from "../assets/images/Asset 5.svg";
+import business from "../assets/images/Asset 9.svg";
+import educational from "../assets/images/Asset 4.svg";
+import mortgage from "../assets/images/Asset 7.svg";
+import travel from "../assets/images/Asset 8.svg";
 ---
 
 <Layout title="Services - Contact Credit Limited">
+  <section
+    class="py-12 flex items-center justify-center bg-cover bg-right md:bg-center bg-no-repeat dark:bg-gray-900"
+  >
+    <div
+      class="flex justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
+    >
+      <h1 class="text-center font-bold py-6 text-3xl">WHAT WE DO</h1>
+    </div>
+  </section>
   <section>
-    <h1>service</h1>
+    <div
+      class="cards grid grid-cols-1 md:grid-cols-3 md:px-12 gap-4 lg:grid-cols-4"
+    >
+      <div class="py-6 flex justify-center items-center">
+        <label id="summary">
+          <input type="checkbox" />
+          <article>
+            <div
+              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+            >
+              <header class="flex justify-center">
+                <h2 class="uppercase font-bold">Proof of Funds</h2>
+              </header>
+              <img src={proof_funds} class="w-24" />
+            </div>
+            <div
+              class="back bg-myGreen flex justify-center items-center text-white"
+            >
+              <p class="text-justify">
+                This service involves the issuance of an official document or
+                statement, confirming that a specific individual, business, or
+                account holder has the required amount of money available in
+                their account to support a particular financial endeavor.
+              </p>
+            </div>
+          </article>
+        </label>
+      </div>
+
+      <div class="p-6 flex justify-center items-center">
+        <label id="summary">
+          <input type="checkbox" />
+          <article>
+            <div class="front">
+              <header>
+                <h2>Summary</h2>
+                <span class="material-symbols-outlined"> more_vert</span>
+              </header>
+              <var>21</var>
+              <h3>Due Tasks</h3>
+              <h4>Completed: 13</h4>
+            </div>
+            <div class="back">
+              <header>
+                <h2>Summary</h2>
+                <span class="material-symbols-outlined"> close</span>
+              </header>
+              <p>More Information</p>
+            </div>
+          </article>
+        </label>
+      </div>
+      <div class="p-6 flex justify-center items-center">
+        <label id="summary">
+          <input type="checkbox" />
+          <article>
+            <div class="front">
+              <header>
+                <h2>Summary</h2>
+                <span class="material-symbols-outlined"> more_vert</span>
+              </header>
+              <var>21</var>
+              <h3>Due Tasks</h3>
+              <h4>Completed: 13</h4>
+            </div>
+            <div class="back">
+              <header>
+                <h2>Summary</h2>
+                <span class="material-symbols-outlined"> close</span>
+              </header>
+              <p>More Information</p>
+            </div>
+          </article>
+        </label>
+      </div>
+      <label id="summary">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Summary</h2>
+              <span class="material-symbols-outlined"> more_vert</span>
+            </header>
+            <var>21</var>
+            <h3>Due Tasks</h3>
+            <h4>Completed: 13</h4>
+          </div>
+          <div class="back">
+            <header>
+              <h2>Summary</h2>
+              <span class="material-symbols-outlined"> close</span>
+            </header>
+            <p>More Information</p>
+          </div>
+        </article>
+      </label>
+      <label id="overdue">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Overdue</h2>
+              <span class="material-symbols-outlined"> more_vert</span>
+            </header>
+            <var>17</var>
+            <h3>Projects</h3>
+            <h4>Yesterday: 9</h4>
+          </div>
+          <div class="back">
+            <header>
+              <h2>Overdue</h2>
+              <span class="material-symbols-outlined"> close</span>
+            </header>
+            <p>More Information</p>
+          </div>
+        </article>
+      </label>
+      <label id="features">
+        <input type="checkbox" />
+        <article>
+          <div class="front">
+            <header>
+              <h2>Features</h2>
+              <span class="material-symbols-outlined"> more_vert</span>
+            </header>
+            <var>38</var>
+            <h3>Proposals</h3>
+            <h4>Implemented: 6</h4>
+          </div>
+          <div class="back">
+            <header>
+              <h2>Features</h2>
+              <span class="material-symbols-outlined"> close</span>
+            </header>
+            <p>More Information</p>
+          </div>
+        </article>
+      </label>
+    </div>
   </section>
 </Layout>
+
+<style>
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .cards {
+    display: flex;
+    gap: 30px;
+  }
+
+  article {
+    position: relative;
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+  }
+
+  article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 26px;
+  }
+
+  article header h2 {
+    font-size: 20px;
+  }
+
+  article .front,
+  article .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    backface-visibility: hidden;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    padding: 24px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  input {
+    position: absolute;
+    scale: 0;
+  }
+
+  input:checked ~ article .back {
+    transform: rotateY(0);
+  }
+
+  input:checked ~ article .front {
+    transform: rotateY(-180deg);
+  }
+
+  article var {
+    font-style: normal;
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  article h3 {
+    margin: 0 0 30px;
+    font-weight: 500;
+  }
+
+  #summary :is(var, h3) {
+    color: #3b82f6;
+  }
+
+  #overdue :is(var, h3) {
+    color: #ef4444;
+  }
+
+  #features :is(var, h3) {
+    color: #22c55e;
+  }
+</style>
