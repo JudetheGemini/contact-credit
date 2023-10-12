@@ -48,48 +48,52 @@ import travel from "../assets/images/Asset 8.svg";
         </label>
       </div>
 
-      <div class="p-6 flex justify-center items-center">
+      <div class="py-6 flex justify-center items-center">
         <label id="summary">
           <input type="checkbox" />
           <article>
-            <div class="front">
-              <header>
-                <h2>Summary</h2>
-                <span class="material-symbols-outlined"> more_vert</span>
+            <div
+              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+            >
+              <header class="flex justify-center">
+                <h2 class="uppercase font-bold">Proof of Funds</h2>
               </header>
-              <var>21</var>
-              <h3>Due Tasks</h3>
-              <h4>Completed: 13</h4>
+              <img src={proof_funds} class="w-24" />
             </div>
-            <div class="back">
-              <header>
-                <h2>Summary</h2>
-                <span class="material-symbols-outlined"> close</span>
-              </header>
-              <p>More Information</p>
+            <div
+              class="back bg-myGreen flex justify-center items-center text-white"
+            >
+              <p class="text-justify">
+                This service involves the issuance of an official document or
+                statement, confirming that a specific individual, business, or
+                account holder has the required amount of money available in
+                their account to support a particular financial endeavor.
+              </p>
             </div>
           </article>
         </label>
       </div>
-      <div class="p-6 flex justify-center items-center">
+      <div class="py-6 flex justify-center items-center">
         <label id="summary">
           <input type="checkbox" />
           <article>
-            <div class="front">
-              <header>
-                <h2>Summary</h2>
-                <span class="material-symbols-outlined"> more_vert</span>
+            <div
+              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+            >
+              <header class="flex justify-center">
+                <h2 class="uppercase font-bold">Proof of Funds</h2>
               </header>
-              <var>21</var>
-              <h3>Due Tasks</h3>
-              <h4>Completed: 13</h4>
+              <img src={proof_funds} class="w-24" />
             </div>
-            <div class="back">
-              <header>
-                <h2>Summary</h2>
-                <span class="material-symbols-outlined"> close</span>
-              </header>
-              <p>More Information</p>
+            <div
+              class="back bg-myGreen flex justify-center items-center text-white"
+            >
+              <p class="text-justify">
+                This service involves the issuance of an official document or
+                statement, confirming that a specific individual, business, or
+                account holder has the required amount of money available in
+                their account to support a particular financial endeavor.
+              </p>
             </div>
           </article>
         </label>
@@ -167,11 +171,6 @@ import travel from "../assets/images/Asset 8.svg";
   h4 {
     margin: 0;
     font-weight: 500;
-  }
-
-  .cards {
-    display: flex;
-    gap: 30px;
   }
 
   article {
