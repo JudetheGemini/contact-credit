@@ -6,16 +6,25 @@ import business from "../assets/images/Asset 9.svg";
 import educational from "../assets/images/Asset 4.svg";
 import mortgage from "../assets/images/Asset 7.svg";
 import travel from "../assets/images/Asset 8.svg";
+import salary from "../assets/images/Asset 9a.svg";
+import lpo from "../assets/images/Asset 8a.svg";
 ---
 
 <Layout title="Services - Contact Credit Limited">
   <section
-    class="py-12 flex items-center justify-center bg-cover bg-right md:bg-center bg-no-repeat dark:bg-gray-900"
+    class="py-6 flex items-center justify-center bg-gray-100 bg-right md:bg-center dark:bg-gray-900"
   >
     <div
-      class="flex justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
+      class="flex flex-col justify-center items-center p-4 md:mt-0 md:col-span-5 md:flex"
     >
-      <h1 class="text-center font-bold py-6 text-3xl">WHAT WE DO</h1>
+      <h1 class="text-center font-bold text-myBlue py-6 text-3xl">
+        Explore our services
+      </h1>
+      <p class="text-center font-bold text-myBlue py-2 text-sm md:text-base">
+        Welcome to Contact Credit Ltd., your source for a variety of tailored
+        services. From finance to investment, we're here to support your
+        success.
+      </p>
     </div>
   </section>
   <section>
@@ -27,7 +36,7 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-gray-700 hover:translate-x-6 hover:bg-myBlue hover:text-white"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
                 <h2 class="uppercase font-bold text-white">Proof of Funds</h2>
@@ -53,21 +62,21 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">Personal Loans</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={personal} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Whatever your goals, our personal loans provide the financial
+                flexibility to make them happen. From weddings to home
+                improvements, we're here to support your dreams. Apply today and
+                take the first step toward achieving your aspirations.
               </p>
             </div>
           </article>
@@ -78,21 +87,22 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">
+                  Educational Loans
+                </h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={educational} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                We're here to help you succeed academically. Our student loans
+                provide the financial support you need for tuition, books, and
+                more. Start your educational journey today.
               </p>
             </div>
           </article>
@@ -103,21 +113,19 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">Business Loans</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={business} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Our business loans are here to drive your business forward.
+                Fast, flexible financing to fuel your growth and success.
               </p>
             </div>
           </article>
@@ -128,21 +136,19 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">asset management</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={mortgage} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Our specialized asset management services drive efficiency and
+                growth. Let us optimize your assets for financial success.
               </p>
             </div>
           </article>
@@ -154,21 +160,20 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">travel loans</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={travel} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Your dream vacation awaits, and our travel loans can take you
+                there. Fast, easy, and hassle-free financing for your next
+                adventure.
               </p>
             </div>
           </article>
@@ -179,21 +184,21 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">lpo financing</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={lpo} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Secure the funds you need to fulfill purchase orders with our
+                LPO financing. We're your partner in business growth, providing
+                quick and reliable financial solutions to meet your procurement
+                needs.
               </p>
             </div>
           </article>
@@ -204,21 +209,21 @@ import travel from "../assets/images/Asset 8.svg";
           <input type="checkbox" />
           <article>
             <div
-              class="front flex flex-col items-center justify-center bg-greyish hover:translate-x-6 hover:tr"
+              class="front flex flex-col items-center justify-center bg-gray-600 hover:translate-x-6 hover:bg-myBlue"
             >
               <header class="flex justify-center">
-                <h2 class="uppercase font-bold">Proof of Funds</h2>
+                <h2 class="uppercase font-bold text-white">Salary Advance</h2>
               </header>
-              <img src={proof_funds} class="w-24" />
+              <img src={salary} class="w-24" />
             </div>
             <div
               class="back bg-myGreen flex justify-center items-center text-white"
             >
               <p class="text-justify">
-                This service involves the issuance of an official document or
-                statement, confirming that a specific individual, business, or
-                account holder has the required amount of money available in
-                their account to support a particular financial endeavor.
+                Our salary advance service is here to provide financial support
+                when unexpected expenses arise. Get the funds you need quickly
+                and hassle-free. We're your solution for financial peace of
+                mind.
               </p>
             </div>
           </article>
