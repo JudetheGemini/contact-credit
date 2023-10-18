@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp dist/index.html $DEPLOYPATH
+    - /bin/cp dist/favicon.svg $DEPLOYPATH
+    - /bin/cp -R dist/services $DEPLOYPATH
+    - /bin/cp -R dist/contact $DEPLOYPATH
+    - /bin/cp -R dist/_astro $DEPLOYPATH
