@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://judethegemini.github.io",
-  base: "/contact-credit",
+  // site: "https://judethegemini.github.io",
+  // base: "/contact-credit",
   integrations: [tailwind(), react()],
 });
