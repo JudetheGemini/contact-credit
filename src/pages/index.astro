@@ -18,7 +18,7 @@ import logo from "../assets/images/logo.svg";
 <Layout title="Contact Credit Limited">
   <main>
     <section
-      class="py-12 h-screen bg-money flex items-center bg-cover bg-right md:bg-center bg-no-repeat dark:bg-gray-900"
+      class="py-12 h-screen bg-money bg-fixed flex items-center bg-cover bg-right md:bg-center bg-no-repeat dark:bg-gray-900"
     >
       <div
         class="grid justify-center max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
@@ -99,7 +99,7 @@ import logo from "../assets/images/logo.svg";
       </div>
     </section>
     <section
-      class="bg-white pt-8 flex justify-center items-center dark:bg-gray-900"
+      class="bg-white md:pt-4 flex justify-center items-center dark:bg-gray-900"
     >
       <div
         class="grid justify-center mx-auto max-w-screen-xl md:gap-8 xl:gap-0 md:py-6 md:px-10 lg:px-0 md:grid-cols-12"
@@ -177,42 +177,7 @@ import logo from "../assets/images/logo.svg";
             <div
               class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
             >
-              <img src={personal} class="w-24" />
-            </div>
-            <h3
-              class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
-            >
-              Personal Loans
-            </h3>
-            <p class="text-gray-600 font-kumbh text-justify dark:text-gray-400">
-              Whatever your goals, our personal loans provide the financial
-              flexibility to make them happen. From weddings to home
-              improvements, we're here to support your dreams. Apply today and
-              take the first step toward achieving your aspirations.
-            </p>
-          </div>
-          <div class="px-4">
-            <div
-              class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
-            >
-              <img src={educational} class="w-24" />
-            </div>
-            <h3
-              class="mb-2 text-xl text-center font-bold text-myBlue font-kumbh dark:text-white"
-            >
-              Educational Loans
-            </h3>
-            <p class="text-gray-600 font-kumbh text-justify dark:text-gray-400">
-              We're here to help you succeed academically. Our student loans
-              provide the financial support you need for tuition, books, and
-              more. Start your educational journey today.
-            </p>
-          </div>
-          <div class="px-4">
-            <div
-              class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
-            >
-              <img src={mortgage} class="w-28" />
+              <img src={mortgage} class="w-28 md:w-32" />
             </div>
             <h3
               class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
@@ -228,7 +193,7 @@ import logo from "../assets/images/logo.svg";
             <div
               class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
             >
-              <img src={travel} class="w-28" />
+              <img src={travel} class="w-28 md:w-32" />
             </div>
             <h3
               class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
@@ -245,7 +210,7 @@ import logo from "../assets/images/logo.svg";
             <div
               class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
             >
-              <img src={business} class="w-28" />
+              <img src={business} class="w-28 md:w-32" />
             </div>
             <h3
               class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
@@ -263,7 +228,25 @@ import logo from "../assets/images/logo.svg";
             <div
               class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
             >
-              <img src={proof_funds} class="w-20" />
+              <img src={personal} class="w-28" />
+            </div>
+            <h3
+              class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
+            >
+              Personal Loans
+            </h3>
+            <p class="text-gray-600 font-kumbh text-justify dark:text-gray-400">
+              Whatever your goals, our personal loans provide the financial
+              flexibility to make them happen. From weddings to home
+              improvements, we're here to support your dreams.
+            </p>
+          </div>
+
+          <div class="px-4">
+            <div
+              class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
+            >
+              <img src={proof_funds} class="w-24" />
             </div>
             <h3
               class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
@@ -282,7 +265,7 @@ import logo from "../assets/images/logo.svg";
             <div
               class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
             >
-              <img src={lpo} class="w-16" />
+              <img src={lpo} class="w-20" />
             </div>
             <h3
               class="mb-2 text-xl text-center text-myBlue font-bold font-kumbh dark:text-white"
@@ -297,14 +280,33 @@ import logo from "../assets/images/logo.svg";
               and reliable financial solutions to meet your procurement needs.
             </p>
           </div>
+          <div class="px-4">
+            <div
+              class="flex justify-center items-center mb-4 w-auto h-auto rounded-full bg-primary-100 lg:h-auto lg:w-auto dark:bg-primary-900"
+            >
+              <img src={educational} class="w-28" />
+            </div>
+            <h3
+              class="mb-2 text-xl text-center font-bold text-myBlue font-kumbh dark:text-white"
+            >
+              Educational Loans
+            </h3>
+            <p class="text-gray-600 font-kumbh text-justify dark:text-gray-400">
+              We're here to help you succeed academically. Our student loans
+              provide the financial support you need for tuition, books, and
+              more. Start your educational journey today.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section
-      class="bg-white py-8 flex flex-col justify-center items-center dark:bg-gray-900"
+      class="bg-white py-4 flex flex-col justify-center items-center dark:bg-gray-900"
     >
       <div class="flex flex-col items-center">
-        <h4 class="font-extrabold text-myBlue font-kumbh text-2xl">
+        <h4
+          class="font-extrabold text-myBlue tracking-tight font-kumbh text-xl md:text-2xl lg:text-3xl"
+        >
           Why Choose Us?
         </h4>
       </div>
