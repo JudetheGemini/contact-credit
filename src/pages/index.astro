@@ -18,36 +18,40 @@ import logo from "../assets/images/logo.svg";
 <Layout title="Contact Credit Limited">
   <main>
     <section
-      class="py-12 h-screen bg-money md:bg-fixed flex items-center bg-cover bg-right md:bg-center bg-no-repeat dark:bg-gray-900"
+      class="h-screen bg-money md:bg-fixed flex items-center bg-cover bg-right md:bg-center lg:bg-right-top bg-no-repeat dark:bg-gray-900"
     >
       <div
-        class="grid justify-center max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-0 md:grid-cols-12"
+        class="w-full h-full flex justify-center items-center backdrop-brightness-90"
       >
         <div
-          class="flex flex-col justify-center items-center mr-auto place-self-center md:items-start md:col-span-7"
+          class="grid justify-center max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:px-10 lg:px-2 md:grid-cols-12"
         >
-          <h1
-            class="text-center max-w-[370px] mb-4 text-xl text-white leading-8 font-extrabold uppercase font-kumbh tracking-tight md:text-left md:max-w-[650px] md:text-4xl md:leading-12"
+          <div
+            class="flex flex-col justify-start items-center mr-auto place-self-center md:items-start md:col-span-7"
           >
-            CONTACT CREDIT LIMITED
-          </h1>
-          <h1
-            class="text-center max-w-[370px] mb-4 text-white text-xl leading-8 font-extrabold uppercase font-kumbh tracking-tight md:text-left md:max-w-[650px] md:text-4xl md:pb-4 md:leading-12 dark:text-white"
-          >
-            Empowering your dreams, one loan at a time!
-          </h1>
+            <h1
+              class="text-center max-w-[370px] mb-4 text-2xl text-myBlue leading-8 font-extrabold font-kumbh tracking-tight md:text-left md:max-w-[550px] xl:max-w-[750px] md:text-4xl lg:text-5xl md:leading-12"
+            >
+              Contact Credit Limited
+            </h1>
+            <h1
+              class="text-center max-w-[370px] mb-4 text-white text-2xl leading-8 font-extrabold font-kumbh tracking-tight md:text-left md:max-w-[550px] xl:max-w-[750px] md:text-4xl xl:text-5xl md:pb-4 md:leading-12 dark:text-white"
+            >
+              Unlocking Financial Potential, One Service at a Time.
+            </h1>
 
-          <a
-            href="/contact"
-            class="inline-flex items-center animate-wiggle justify-center transition hover:ease-in duration-300 font-kumbh px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg hover:bg-myGreen bg-myBlue dark:text-white"
+            <a
+              href="/contact"
+              class="inline-flex items-center animate-wiggle justify-center transition hover:ease-in duration-300 font-kumbh px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg hover:bg-myGreen bg-myBlue dark:text-white"
+            >
+              Contact Us
+            </a>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
           >
-            Contact Us
-          </a>
-        </div>
-        <div
-          class="flex flex-col justify-center items-center pt-4 md:mt-0 md:col-span-5 md:flex"
-        >
-          <!-- <img src={} alt="mockup" class="rounded-lg" /> -->
+            <!-- <img src={} alt="mockup" class="rounded-lg" /> -->
+          </div>
         </div>
       </div>
     </section>
